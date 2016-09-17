@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AccountKit</title>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+  </head>
+
+  <body>
+    <%= yield %>
+
+     </body>
+</html>

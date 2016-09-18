@@ -12,10 +12,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'account_kit'
 gem 'pry-rails'
-gem 'facebook-account-kit'
+gem 'secure_headers'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do

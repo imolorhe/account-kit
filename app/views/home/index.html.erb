@@ -2,31 +2,16 @@
 
 <div id="sms_login"> 
     <h2>Sms kit</h2> 
+    <%= label_tag "Enter country code (e.g. +234):" %> <br /> 
+        <%= text_field_tag 'country_code' %> <br /> 
+    <%= label_tag "Enter phone number without spaces (e.g. 09099123xx):" %> <br /> 
+        <%= text_field_tag 'phone_num' %> <br /> <br /> 
+    <%= submit_tag "Login via SMS", id: "phone_btn" %> 
+ </div>
 
-    Enter country code (e.g. +1):
-<input type="text" id="country_code" />
-Enter phone number without spaces (e.g. 444555666):
-<input type="text" id="phone_num"/>
-<button onclick="phone_btn_onclick();">Login via SMS</button>
-Enter email address
-<input type="text" id="email"/>
-<button onclick="email_btn_onclick();">Login via Email</button>
-
-  
-<div id="jsNode"></div>
-
-
-    <%#= form_for :sms, url: "sms", method: :post do |f|  %> 
-        <%#= f.label "Enter country code (e.g. +234):" %> <br /> 
-        <%#= f.text_field :country_code %> <br /> 
-
-        <%#= f.label "Enter phone number without spaces (e.g. 09099123xx):" %> <br /> 
-        <%#= f.text_field :phone_num %> <br /> <br /> 
-
-        <%#= f.submit "Login via SMS" %> 
-    <%# end %> 
-
-<%#= form_for :email do |f|  %> 
-        <%#= f.label "Enter email address:" %> <br /> 
-        <%#= f.email_field :email %> <br /> 
-<%# end %> 
+<div id="email_login">
+    <h2>Email kit</h2> 
+    <%= label_tag "Enter email address:" %> <br /> 
+    <%= email_field_tag :email %> <br /> <br />
+    <%= submit_tag "Login via Email", id: "email_btn" %>
+</div>
